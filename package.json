@@ -1,0 +1,18 @@
+{
+  "name": "auto-cors",
+  "version": "1.0.0",
+  "description": "A proxy to automatically add CORS headers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "auto-cors": "./bin/auto-cors.js"
+  },
+  "author": "harttle<yangjvn@126.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  }
+}
