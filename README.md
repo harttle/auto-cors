@@ -40,3 +40,16 @@ AUTO_CORS_PORT=9001 npx auto-cors
 Visit <http://localhost:9001/https://example.com> in your browser.
 
 ## Deploy your own service
+
+Install
+
+```bash
+# install globally
+npm i -g auto-cors
+auto-cors
+# or use npx auto-cors
+```
+
+Here's a systemd script for auto-cors:
+
+<https://gist.github.com/harttle/a801084f42b9ee1a2aa6bf5c191b9ad9>
