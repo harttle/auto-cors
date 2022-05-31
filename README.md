@@ -5,7 +5,25 @@ A proxy to automatically add CORS headers, supports:
 - OPTIONS preflight request for non-simple requests.
 - CORS request with crendentials included.
 
-There's an `auto-cors` service deployed at cors.harttle.com, for example: <http://cors.harttle.com/https://example.com>
+There's an `auto-cors` service deployed at cors.harttle.com. Both HTTP and HTTPS are supported:
+
+- <http://cors.harttle.com/https://example.com>
+- <https://cors.harttle.com/https://example.com>
+
+Additional headers:
+
+- `Auto-Cors-Request-Header` to set additional request headers that are not allowed (like `cookie`, `referer`, `origin`, etc.) in headers. e.g.
+    ```javascript
+    // set a "Cookie: XXX" header when forwarding request
+    fetch(
+        "https://cors.harttle.com/https://example.com",
+        {
+            headers: {
+                "Auto-Cors-Request-Header-Cookie": "XXX"
+            }
+        }
+    )
+    ```
 
 ## Install
 
