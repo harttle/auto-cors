@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto CORS server</title>
+</head>
+<body>
+  <h1>Auto CORS server</h1>
+
+  <p>
+  This is Auto CORS server maintained by <a href="https://github.com/harttle" target="_blank">harttle</a>. Request <code>/${url}</code> to proxy <code>url</code> with CORS enabled. For example:
+  </p>
+  <pre><code>&gt; curl -I https://cors.harttle.com/http://example.com
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Sat, 04 Jun 2022 16:11:18 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1256
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: host,connection,user-agent,accept
+age: 220213
+cache-control: max-age=604800
+etag: "3147526947+ident"
+expires: Sat, 11 Jun 2022 16:11:18 GMT
+last-modified: Thu, 17 Oct 2019 07:18:26 GMT
+vary: Accept-Encoding
+x-cache: HIT
+  </code></pre>
+  <p>
+  See <a href="https://github.com/harttle/auto-cors" target="_blank">Documentation</a>.
+  </p>
+</body>
+</html>

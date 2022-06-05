@@ -1,4 +1,4 @@
-function rawBodyParser(req, res, next) {
+export function rawBodyParser(req, res, next) {
     req.rawBody = Buffer.from([]);
 
     req.on('data', function(chunk) {
@@ -9,5 +9,3 @@ function rawBodyParser(req, res, next) {
         next();
     });
 }
-
-module.exports = { rawBodyParser };

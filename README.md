@@ -1,4 +1,5 @@
 # auto-cors
+
 A proxy to automatically add CORS headers, supports:
 
 - Simple requests with `Access-Control-Allow-Origin: "*"`
